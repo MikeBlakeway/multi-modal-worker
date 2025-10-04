@@ -1,0 +1,49 @@
+# Multi-Modal Inference Worker Dependencies
+#
+# Core dependencies for RunPod serverless worker supporting multiple AI modalities
+
+# RunPod SDK
+runpod>=1.5.1
+
+# Core ML frameworks
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0
+
+# Diffusion and generative models
+diffusers>=0.24.0
+accelerate>=0.24.0
+
+# Image processing
+Pillow>=10.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Video processing (for AnimateDiff and LTX-Video)
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.8
+
+# Model optimization
+optimum>=1.14.0
+bitsandbytes>=0.41.0
+
+# Utilities
+requests>=2.31.0
+tqdm>=4.66.0
+scipy>=1.11.0
+
+# Configuration and logging
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# Optional: For future ControlNet integration
+# controlnet-aux>=0.0.3
+
+# Optional: For future camera control
+# mediapipe>=0.10.0
+
+# Development dependencies (commented out for production)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+# black>=23.9.0
+# flake8>=6.0.0

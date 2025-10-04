@@ -1,0 +1,30 @@
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+diffusers>=0.24.0
+transformers>=4.35.0
+pydantic>=2.0.0
+pillow>=10.0.0
+numpy>=1.24.0
+opencv-python>=4.8.0
+imageio>=2.37.0
+imageio-ffmpeg>=0.6.0
+
+# Development and testing dependencies
+pytest>=7.4.0
+pytest-mock>=3.15.0
+pytest-cov>=4.1.0
+pytest-xdist>=3.3.0  # For parallel test execution
+pytest-factoryboy>=2.5.0  # For test data factories
+hypothesis>=6.82.0  # For property-based testing
+
+# Code quality
+black>=23.7.0
+isort>=5.12.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Optional ML dependencies (for actual inference)
+# These would be installed in production but not needed for unit tests
+# controlnet-aux>=0.4.0
+# xformers>=0.0.20  # Memory optimization for transformers

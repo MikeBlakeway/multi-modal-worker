@@ -1,0 +1,232 @@
+# Multi-Model Worker Docker Build Optimization
+# Exclude files and directories that aren't needed in the Docker build context
+# This reduces build time and image size
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+README*
+CHANGELOG*
+LICENSE*
+docs/
+*.txt
+
+# Development and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Python development
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Environment files (contain secrets)
+.env
+.env.*
+!.env.example
+
+# Local configuration
+config.local.*
+*.local
+
+# Logs and runtime data
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.lnk
+
+# Docker related (don't include other Docker files in build context)
+Dockerfile.*
+!docker/Dockerfile
+docker-compose*.yml
+!docker-compose.yml
+
+# Build artifacts from other projects
+node_modules/
+dist/
+build/
+out/
+
+# Package managers
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+Pipfile.lock
+
+# IDE and editor specific
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*~
+
+# Model files that should be downloaded during build, not copied
+models/
+data/models/
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.safetensors
+
+# Large data files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+datasets/
+
+# Development scripts not needed in production
+scripts/test/
+scripts/dev/
+test_*.py
+*_test.py
+tests/
+
+# CI/CD files
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+azure-pipelines.yml
+
+# Local development overrides
+docker-compose.override.yml
+.docker/
+.devcontainer/
+
+# Makefile (contains local development commands)
+Makefile
+
+# Requirements files are copied explicitly when needed
+requirements*.txt
+!requirements.txt
+!requirements-prod.txt
+
+# Python cache and optimization files
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+
+# Coverage and profiling
+.coverage
+.prof
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets and keys
+*.pem
+*.key
+*.crt
+*.p12
+secrets/
+private/
+
+# Temporary Python files
+.python-version
+.pyenv
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Desktop.ini
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk

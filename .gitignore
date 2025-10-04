@@ -1,0 +1,142 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local configuration
+config.local.*
+*.local
+
+# Logs and runtime data
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.lnk
+
+# IDE and editor specific
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*~
+
+# Model files (should be downloaded during runtime)
+models/
+data/models/
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.safetensors
+.huggingface/
+
+# Large data files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+datasets/
+
+# Development outputs
+test_output/
+debug_output/
+temp_files/
+benchmark-results/
+performance-logs/
+
+# Docker development
+.docker/
+.devcontainer/
+docker-compose.override.yml
+
+# CI/CD
+.github/workflows/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+azure-pipelines.yml
+
+# Coverage and profiling
+.prof
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets and keys
+*.pem
+*.key
+*.crt
+*.p12
+secrets/
+private/
